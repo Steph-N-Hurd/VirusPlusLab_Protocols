@@ -15,7 +15,7 @@ pacman::p_load(tidyverse,knitr)
 
 The purpose of this protocol is to extract viral RNA from samples - oral swab or cloacal swabs taken from a bird usually - that have been stored in viral transport media (VTM). This protocol is semi-automated, meaning that half of it is performed by personnel and the other half is performed on the Thermo Fisher Kingfisher Flex benchtop robot. The protocol should take about **2-3 hours** to complete with a 47 minute robot handling time. Two VirusPlus Lab personnel are required for the performance of this extraction.
 
-The printable view code for this protocol can be found [here](https://jonathan-dain-42.github.io/VirusPlusLab_Protocols/Viral_RNA_DNA_Extraction_Protocol/Viral_RNA_DNA_Extraction_protocol.html)
+The printable view code for this protocol can be found [here](https://jonathan-dain-42.github.io/VirusPlusLab_Protocols/Viral_RNA_DNA_Extraction/Viral_RNA_DNA_Extraction_protocol.html)
 
 ------------------------------------------------------------------------
 

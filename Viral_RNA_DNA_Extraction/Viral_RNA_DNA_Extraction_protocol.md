@@ -19,7 +19,7 @@ robot handling time. Two VirusPlus Lab personnel are required for the
 performance of this extraction.
 
 The printable view code for this protocol can be found
-[here](https://jonathan-dain-42.github.io/VirusPlusLab_Protocols/Viral_RNA_DNA_Extraction_Protocol/Viral_RNA_DNA_Extraction_protocol.html)
+[here](https://jonathan-dain-42.github.io/VirusPlusLab_Protocols/Viral_RNA_DNA_Extraction/Viral_RNA_DNA_Extraction_protocol.html)
 
 ------------------------------------------------------------------------
 
