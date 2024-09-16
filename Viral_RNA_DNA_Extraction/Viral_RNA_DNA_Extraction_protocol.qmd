@@ -1,0 +1,167 @@
+---
+title: "Extraction Protocol for Swab/Fecal Samples (Using Omega Mag-Bind® Viral RNA/DNA Kit)"
+author: "Jonathan Dain"
+date: "2024-09-16"
+format: gfm
+prefer-html: TRUE
+---
+
+```{r - setup,eval=TRUE,echo=FALSE}
+
+pacman::p_load(tidyverse,knitr)
+```
+
+## Purpose:aSaSas
+
+The purpose of this protocol is to extract viral RNA from samples - oral swab or cloacal swabs taken from a bird usually - that have been stored in viral transport media (VTM). This protocol is semi-automated, meaning that half of it is performed by personnel and the other half is performed on the Thermo Fisher Kingfisher Flex benchtop robot. The protocol should take about **2-3 hours** to complete with a 47 minute robot handling time. Two VirusPlus Lab personnel are required for the performance of this extraction.
+
+The printable view code for this protocol can be found [here](https://jonathan-dain-42.github.io/VirusPlusLab_Protocols/Viral_RNA_DNA_Extraction_Protocol/Viral_RNA_DNA_Extraction_protocol.html)
+
+------------------------------------------------------------------------
+
+```{r,eval=TRUE,echo=FALSE}
+df<- tibble(Step_number=character(),Description=character(),Performer_Initials=character(),Reviewer_Initials=character())
+```
+
+## Procedure
+
+```{r,echo=FALSE,eval=TRUE}
+df |> 
+  add_row(Step_number="1",Description="1-2 hours before starting: thaw samples in orange rack on counter (benchtop thaw). Samples are from the field, so handle with universal precautions. Print out extraction plate map.",Performer_Initials="",Reviewer_Initials="") |> add_row(Step_number="2",Description="15 minutes before starting: turn on the blower of the biosafety cabinet (BSC). Remember to place samples in mini-fridge after thaw to keep cool. Treat the hood with RNase Zap as well as the bench space labeled RNAse Free.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="3",Description="Flip sign on door “Low Path Avian Influenza work in progress”. Put on PPE for BSL2+ work: gloves x 2, Tyvek, booties, goggles",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="4",Description="Wipe down the grey counters and Kingfisher robot with RNase Zap to remove enzymes common on surfaces that degrade RNA. Additionally wipe with Quartricide.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="5",Description="Retrieve Mag-Bind Viral RNA/DNA Kit from shelf. Use currently open kit before opening new kit. It should be labeled as 'current kit'",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="6",Description="Disinfect the BSC. Spray a paper towel with quatricide and wipe all reagents, pipettes, tip boxes and equipment before placing inside BSC, see table on next page for list of reagents:",Performer_Initials="",Reviewer_Initials="") |> kable() |> 
+  kableExtra::column_spec(1:4,border_left = T, border_right = T) |> 
+  kableExtra::kable_styling()
+
+```
+
+------------------------------------------------------------------------
+
+Equipment and Reagent list:
+
+```{r,echo=FALSE}
+tibble(`Item in BSC`=character(),check1=character(),`Item in Mini Fridge`=character(),check2=character()) |> 
+  add_row(`Item in BSC`="1 x 200 uL Pipette",check1="",`Item in Mini Fridge`="Linear polyacrylamide",check2="") |> 
+  add_row(`Item in BSC`="1 x 200µl multichannel pipette",check1="",`Item in Mini Fridge`="Mag-bind Beads CNR",check2="") |> 
+  add_row(`Item in BSC`="200uL filter tips",check1="",`Item in Mini Fridge`="VTM aliquotes",check2="") |> 
+  add_row(`Item in BSC`="4 x sterile reservoir boats",check1="",`Item in Mini Fridge`="Postive Control",check2="") |> 
+  add_row(`Item in BSC`="Omega Mag-Bind Viral DNA/RNA 96 Kit",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x Kingfisher standard 96 well plate",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="4 x Kingfisher 96 deep-well plates",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="2 x small Biohazard bags",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="Aliquot of VTM for negative control",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="2 x 10ml stripette",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="2 x 15ml conical tubes",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x vortex",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x pink tube rack",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x TNA lysis buffer",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="100% isopropanol",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x proteinase K",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x VHB buffer",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x SPR buffer",check1="",`Item in Mini Fridge`="",check2="") |> 
+  add_row(`Item in BSC`="1 x Nuclease-free water",check1="",`Item in Mini Fridge`="",check2="") |> kable() |> 
+  kableExtra::column_spec(1:4,border_left = T, border_right = T) |> 
+  kableExtra::kable_styling()
+
+
+```
+
+```{r,echo=FALSE}
+df |> 
+  add_row(Step_number="7",Description="Run a maintenance check of the Kingfisher robot. Use -> arrow to navigate to maintenance tab (spanner icon), scroll down to maintenance checks (spanner & list icon). Select “Check_96dw_tips” program and start. Load the tip comb and ‘Tip Pickup’ plate",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="8",Description="If VHB buffer and SPM are not already prepared make up VHB Buffer and SPM Buffer (first-time use only) and store at room temp. See Below:",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="",Description="a) VHB Buffer: Add 112mL of 100% ethanol (this is the high salt wash buffer). Use Serological Pipette tip to transfer 100% ethanol. Please 'X' the performer box if this step is not needed.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="",Description="b) SPR Buffer: Add 400mL of 100% ethanol (this is the low salt wash buffer). Use Serological Pipette tip to transfer 100% ethanol. Please 'X' the performer box if this step is not needed.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="9",Description="Gently invert all buffers before use. Use reservoirs for loading the multichannel pipette.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="10",Description="Label your five Kingfisher (KF) deep well plate the following: ‘VHB’, ‘SPR1’, ‘SPR2’ and ‘Lysate’. Label your single standard 96 well plate 'RNA-DNA_YYYYMMDD'.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="11",Description="In your VHB KF deep well plate: Add 200μL of VHB buffer to each well. Use the multi-channel P200 pipette.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="12",Description="In your SPR1 KF deep well plate: Add 200μL of SPR buffer to each well. Use the multi-channel P200 pipette.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number='13',Description="In your SPR2 KF deep well plate: Add 200μL of SPR buffer to each well. Use the multi-channel P200 pipette.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="14",Description="Add 50μL of Nuclease-free water to each well except H12 in the “RNA-DNA_YYYYMMDD” plate. This plate will be kept for qPCR and sequencing. Use the multichannel P200 pipette.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="15",Description="Load plates into Kingfisher robot. Select “ViralRNA_DNA” program. When prompted load each plate and a new tip comb into the loading stage of carousel. Use the same tip pickup plate as when performing step 9, the maintenance check. The Lysis plate will be missing, close KF door and continue with next steps.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="16",Description="Remove Mag Bind Particles CNR and linear acrylamide from fridge, and vortex only the Mag bind particles for 2 mins (to reduce clumping). Do not vortex the linear acrylamide.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="17",Description="Make up Viral Lysis Solution and Beads in a 15ml conical and 2mL eppendorf tube respectively using volumes for 1 full plate. See table below for reagent volumes.",Performer_Initials="",Reviewer_Initials="") |> 
+  kable() |> 
+  kableExtra::column_spec(1:4,border_left = T, border_right = T) |> 
+  kableExtra::kable_styling()
+```
+
+**Viral Lysis Mastermix:**
+
+```{r,echo=FALSE}
+tibble(Reagent=character(),`1 Sample uL`=character(),`12 Samples +1 extra uL`=character(),`48 Samples +8 extra uL`=character(),`96 Samples +16 extra uL`=character()) |> 
+  add_row(Reagent="TNA Lysis Buffer",`1 Sample uL`="60 uL",`12 Samples +1 extra uL`="780 uL",`48 Samples +8 extra uL`="3.36ml",`96 Samples +16 extra uL`="6.72 mL") |> 
+  add_row(Reagent="Linear polyacrylamide",`1 Sample uL`="0.4 uL",`12 Samples +1 extra uL`="5.2 uL",`48 Samples +8 extra uL`="22 uL",`96 Samples +16 extra uL`="44.8 uL") |> 
+  add_row(Reagent="Mix Briefly",`1 Sample uL`="--",`12 Samples +1 extra uL`="--",`48 Samples +8 extra uL`="--",`96 Samples +16 extra uL`="--") |> 
+  add_row(Reagent="100% Isopropanol",`1 Sample uL`="70 uL",`12 Samples +1 extra uL`="910 uL",`48 Samples +8 extra uL`="3.92 mL",`96 Samples +16 extra uL`="7.84 mL") |> 
+  add_row(Reagent="Vortex",`1 Sample uL`="--",`12 Samples +1 extra uL`="--",`48 Samples +8 extra uL`="--",`96 Samples +16 extra uL`="--") |> 
+  kable() |> 
+  kableExtra::column_spec(1:4,border_left = T, border_right = T) |> 
+  kableExtra::kable_styling()
+```
+
+\pagebreak
+
+**Bead Mastermix:**
+
+```{r,echo=FALSE}
+tibble(Reagent=character(),`1 Sample uL`=character(),`12 Samples +1 extra uL`=character(),`48 Samples +8 extra uL`=character(),`96 Samples +16 extra uL`=character()) |> 
+  add_row(Reagent="Mag-Bind Beads CNR",`1 Sample uL`="5 uL",`12 Samples +1 extra uL`="65 uL",`48 Samples +8 extra uL`="260 uL",`96 Samples +16 extra uL`="520 uL") |> 
+  add_row(Reagent="Protienase K Solution",`1 Sample uL`="5 uL",`12 Samples +1 extra uL`="65 uL",`48 Samples +8 extra uL`="260 uL",`96 Samples +16 extra uL`="520 uL") |> 
+  add_row(Reagent="Vortex",`1 Sample uL`="--",`12 Samples +1 extra uL`="--",`48 Samples +8 extra uL`="--",`96 Samples +16 extra uL`="--") |> 
+  kable() |> 
+  kableExtra::column_spec(1:4,border_left = T, border_right = T) |> 
+  kableExtra::kable_styling()
+```
+
+```{r,echo=FALSE}
+df |> 
+  add_row(Step_number="18",Description="To your ‘lysate’ KF plate: Add 130.4uL viral lysis mastermix to each well using the P200 multichannel pipette with 200uL filter tips. Pour your viral lysis mastermix into a reservoir for pipette loading",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="19",Description="Close all reagents, wipe with quatricide and remove from the hood (to prevent contamination).",Performer_Initials="",Reviewer_Initials="") |> 
+  kable() |> 
+  kableExtra::column_spec(1:4,border_left = T, border_right = T) |> 
+  kableExtra::kable_styling()
+```
+
+<center>
+
+[***If you would like a break, this is a good point to leave for snacks/lunch and come back***]{.underline}
+
+[***Grab the Ice Bucket on the way back in***]{.underline}
+
+</center>
+
+```{r,echo=FALSE}
+df |> 
+  add_row(Step_number="20",Description="Get red ice bucket and fill with ice. To avoid RNA degradation, samples are kept on ice inside the BSC.", Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="21",Description="On the grey counter outside hood, arrange 22 thawed samples in two rows of 11 in ice bucket. Place the samples lying upright on top of the ice. Place remaining samples back in small fridge for the time being.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="22",Description="Person A: Vortex and opens sample tube with a quatricide sprayed paper towel. Dispose of paper towel after each row of samples, or as needed to maintain sterile procedure.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="",Description="Person B: Add 50µl of sample to ‘Lysate’ plate. (Place pipette tip under the surface of lysis solution to prevent aerosolization). Use a fresh P200 tip for each sample.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="23",Description="Add negative controls, i.e. 50uL VTM (or PBS) into column ‘12’ for 6 rows (A through F). Leftover is discarded after plate is finished.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="24",Description="Add positive control, i.e. 50uL positive control (PR8 virus) into column ‘G12’ of last row. Leave well H12 blank (to add qPCR control at a later stage).",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="25",Description="Briefly vortex bead solution and pipette into an 8-tube PCR strip (130uL each tube).",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="26",Description="In your ‘Lysate’ plate: Add 10uL of bead solution to each well. Use the multi-channel P20 pipette with PDF30ST pipette tips. Mix by pipetting up and down twice.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="27",Description="Load 28.	Load lysate plate into KF robot. Press ‘Start’ button to initiate the cycle. Note any changes/notes on the extraction plate maps.",Reviewer_Initials="",Performer_Initials="") |> 
+  add_row(Step_number="28",Description="Return samples to the boxes in -80. Mark each sample with a slash on lid using a sharpie to indicate a freeze/thaw.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="29",Description="Disinfect hood and all items used during extraction with quatricide. Leave blower on for 15 minutes after the hood has been cleaned out.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="30",Description="Make note of reagents that are low or if we need to order more. Submit requests to Quartzy.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="31",Description="Come back in ~ 45 minutes to store extracted RNA plate in -80 freezer.",Performer_Initials="",Reviewer_Initials="") |> 
+  add_row(Step_number="32",Description="Place extraction map, signed protocl, and any notes in the 'extraction map' binder in 3200 lab space",Performer_Initials="",Reviewer_Initials="") |> 
+  kable() |> 
+  kableExtra::column_spec(1:4,border_left = T, border_right = T) |> 
+  kableExtra::kable_styling()
+```
+
+## Disinfecting & Waste Disposal:
+
+33. Clean glass sash of the hood with 70% ethanol.
+34. Using sterile procedures, remove PPE, place in appropriate storage containers or biohazard waste. Wash hands with soap and water for 20 seconds. Remove sign as you exit the room.\
+35. When the extraction is complete (\~41mins), cover elution plate with foil (optional: make 50 uL aliquots). Store at 4$^\circ$C for use within 2-3 hours. Store at -80$^\circ$C for longer term use.\
+36. Dispose of combs and lysate plates in biohazard trash.\
+37. Clean the Kingfisher buffer plates for re-use (VHB, SPM and tip-pickup). Use squirt bottle with 10% bleach to fill each well. Set aside for 15 mins. Discard liquid down the sink. Rinse with warm running tap water until wells are clear. Soak plates in quatricide overnight (mimic color of quatricide spray bottle (1:64).
+
+[Following day 1:]{.underline} 38. Discard liquid down the sink. Rinse with warm running tap water until wells are clear. Soak plates overnight in DI water.
+
+[Following day 2:]{.underline} 39. Dry upside down on rack above sink. 40. Place plates inside sterilization pouches and autoclave on dry cycle for 45 minutes.

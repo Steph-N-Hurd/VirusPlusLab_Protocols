@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jonathan Dain">
+<meta name="dcterms.date" content="2024-09-16">
+
+<title>Extraction Protocol for Swab/Fecal Samples (Using Omega Mag-Bind® Viral RNA/DNA Kit)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="Viral_RNA_DNA_Extraction_protocol_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Viral_RNA_DNA_Extraction_protocol_files/libs/quarto-html/quarto.js"></script>
+<script src="Viral_RNA_DNA_Extraction_protocol_files/libs/quarto-html/popper.min.js"></script>
+<script src="Viral_RNA_DNA_Extraction_protocol_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="Viral_RNA_DNA_Extraction_protocol_files/libs/quarto-html/anchor.min.js"></script>
+<link href="Viral_RNA_DNA_Extraction_protocol_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Viral_RNA_DNA_Extraction_protocol_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="Viral_RNA_DNA_Extraction_protocol_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="Viral_RNA_DNA_Extraction_protocol_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="Viral_RNA_DNA_Extraction_protocol_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="Viral_RNA_DNA_Extraction_protocol_files/libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="Viral_RNA_DNA_Extraction_protocol_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Viral_RNA_DNA_Extraction_protocol.md"><i class="bi bi-file-code"></i>Github (GFM)</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Extraction Protocol for Swab/Fecal Samples (Using Omega Mag-Bind® Viral RNA/DNA Kit)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Jonathan Dain </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 16, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="purposeasasas" class="level2">
+<h2 class="anchored" data-anchor-id="purposeasasas">Purpose:aSaSas</h2>
+<p>The purpose of this protocol is to extract viral RNA from samples - oral swab or cloacal swabs taken from a bird usually - that have been stored in viral transport media (VTM). This protocol is semi-automated, meaning that half of it is performed by personnel and the other half is performed on the Thermo Fisher Kingfisher Flex benchtop robot. The protocol should take about <strong>2-3 hours</strong> to complete with a 47 minute robot handling time. Two VirusPlus Lab personnel are required for the performance of this extraction.</p>
+<p>The printable view code for this protocol can be found <a href="https://jonathan-dain-42.github.io/VirusPlusLab_Protocols/Viral_RNA_DNA_Extraction_Protocol/Viral_RNA_DNA_Extraction_protocol.html">here</a></p>
+<hr>
+</section>
+<section id="procedure" class="level2">
+<h2 class="anchored" data-anchor-id="procedure">Procedure</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Step_number</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Performer_Initials</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Reviewer_Initials</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1-2 hours before starting: thaw samples in orange rack on counter (benchtop thaw). Samples are from the field, so handle with universal precautions. Print out extraction plate map.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">2</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">15 minutes before starting: turn on the blower of the biosafety cabinet (BSC). Remember to place samples in mini-fridge after thaw to keep cool. Treat the hood with RNase Zap as well as the bench space labeled RNAse Free.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">3</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Flip sign on door “Low Path Avian Influenza work in progress”. Put on PPE for BSL2+ work: gloves x 2, Tyvek, booties, goggles</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">4</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Wipe down the grey counters and Kingfisher robot with RNase Zap to remove enzymes common on surfaces that degrade RNA. Additionally wipe with Quartricide.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">5</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Retrieve Mag-Bind Viral RNA/DNA Kit from shelf. Use currently open kit before opening new kit. It should be labeled as 'current kit'</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">6</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Disinfect the BSC. Spray a paper towel with quatricide and wipe all reagents, pipettes, tip boxes and equipment before placing inside BSC, see table on next page for list of reagents:</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<hr>
+<p>Equipment and Reagent list:</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Item in BSC</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">check1</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Item in Mini Fridge</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">check2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x 200 uL Pipette</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Linear polyacrylamide</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x 200µl multichannel pipette</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Mag-bind Beads CNR</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">200uL filter tips</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">VTM aliquotes</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">4 x sterile reservoir boats</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Postive Control</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Omega Mag-Bind Viral DNA/RNA 96 Kit</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x Kingfisher standard 96 well plate</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">4 x Kingfisher 96 deep-well plates</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">2 x small Biohazard bags</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Aliquot of VTM for negative control</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">2 x 10ml stripette</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">2 x 15ml conical tubes</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x vortex</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x pink tube rack</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x TNA lysis buffer</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">100% isopropanol</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x proteinase K</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x VHB buffer</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x SPR buffer</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">1 x Nuclease-free water</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Step_number</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Performer_Initials</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Reviewer_Initials</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">7</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Run a maintenance check of the Kingfisher robot. Use -&gt; arrow to navigate to maintenance tab (spanner icon), scroll down to maintenance checks (spanner &amp; list icon). Select “Check_96dw_tips” program and start. Load the tip comb and ‘Tip Pickup’ plate</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">8</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">If VHB buffer and SPM are not already prepared make up VHB Buffer and SPM Buffer (first-time use only) and store at room temp. See Below:</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">a) VHB Buffer: Add 112mL of 100% ethanol (this is the high salt wash buffer). Use Serological Pipette tip to transfer 100% ethanol. Please 'X' the performer box if this step is not needed.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">b) SPR Buffer: Add 400mL of 100% ethanol (this is the low salt wash buffer). Use Serological Pipette tip to transfer 100% ethanol. Please 'X' the performer box if this step is not needed.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">9</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Gently invert all buffers before use. Use reservoirs for loading the multichannel pipette.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">10</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Label your five Kingfisher (KF) deep well plate the following: ‘VHB’, ‘SPR1’, ‘SPR2’ and ‘Lysate’. Label your single standard 96 well plate 'RNA-DNA_YYYYMMDD'.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">11</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">In your VHB KF deep well plate: Add 200μL of VHB buffer to each well. Use the multi-channel P200 pipette.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">12</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">In your SPR1 KF deep well plate: Add 200μL of SPR buffer to each well. Use the multi-channel P200 pipette.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">13</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">In your SPR2 KF deep well plate: Add 200μL of SPR buffer to each well. Use the multi-channel P200 pipette.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">14</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Add 50μL of Nuclease-free water to each well except H12 in the “RNA-DNA_YYYYMMDD” plate. This plate will be kept for qPCR and sequencing. Use the multichannel P200 pipette.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">15</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Load plates into Kingfisher robot. Select “ViralRNA_DNA” program. When prompted load each plate and a new tip comb into the loading stage of carousel. Use the same tip pickup plate as when performing step 9, the maintenance check. The Lysis plate will be missing, close KF door and continue with next steps.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">16</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Remove Mag Bind Particles CNR and linear acrylamide from fridge, and vortex only the Mag bind particles for 2 mins (to reduce clumping). Do not vortex the linear acrylamide.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">17</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Make up Viral Lysis Solution and Beads in a 15ml conical and 2mL eppendorf tube respectively using volumes for 1 full plate. See table below for reagent volumes.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<p><strong>Viral Lysis Mastermix:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Reagent</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">1 Sample uL</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">12 Samples +1 extra uL</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">48 Samples +8 extra uL</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">96 Samples +16 extra uL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">TNA Lysis Buffer</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">60 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">780 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">3.36ml</td>
+<td style="text-align: left;">6.72 mL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Linear polyacrylamide</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">0.4 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">5.2 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">22 uL</td>
+<td style="text-align: left;">44.8 uL</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Mix Briefly</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left;">--</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">100% Isopropanol</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">70 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">910 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">3.92 mL</td>
+<td style="text-align: left;">7.84 mL</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Vortex</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left;">--</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+<p><strong>Bead Mastermix:</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Reagent</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">1 Sample uL</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">12 Samples +1 extra uL</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">48 Samples +8 extra uL</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">96 Samples +16 extra uL</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Mag-Bind Beads CNR</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">5 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">65 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">260 uL</td>
+<td style="text-align: left;">520 uL</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Protienase K Solution</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">5 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">65 uL</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">260 uL</td>
+<td style="text-align: left;">520 uL</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Vortex</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">--</td>
+<td style="text-align: left;">--</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Step_number</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Performer_Initials</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Reviewer_Initials</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">18</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">To your ‘lysate’ KF plate: Add 130.4uL viral lysis mastermix to each well using the P200 multichannel pipette with 200uL filter tips. Pour your viral lysis mastermix into a reservoir for pipette loading</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">19</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Close all reagents, wipe with quatricide and remove from the hood (to prevent contamination).</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<center>
+<p><u><strong><em>If you would like a break, this is a good point to leave for snacks/lunch and come back</em></strong></u></p>
+<p><u><strong><em>Grab the Ice Bucket on the way back in</em></strong></u></p>
+</center>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table caption-top table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Step_number</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Performer_Initials</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Reviewer_Initials</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">20</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Get red ice bucket and fill with ice. To avoid RNA degradation, samples are kept on ice inside the BSC.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">21</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">On the grey counter outside hood, arrange 22 thawed samples in two rows of 11 in ice bucket. Place the samples lying upright on top of the ice. Place remaining samples back in small fridge for the time being.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">22</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Person A: Vortex and opens sample tube with a quatricide sprayed paper towel. Dispose of paper towel after each row of samples, or as needed to maintain sterile procedure.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Person B: Add 50µl of sample to ‘Lysate’ plate. (Place pipette tip under the surface of lysis solution to prevent aerosolization). Use a fresh P200 tip for each sample.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">23</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Add negative controls, i.e. 50uL VTM (or PBS) into column ‘12’ for 6 rows (A through F). Leftover is discarded after plate is finished.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">24</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Add positive control, i.e. 50uL positive control (PR8 virus) into column ‘G12’ of last row. Leave well H12 blank (to add qPCR control at a later stage).</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">25</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Briefly vortex bead solution and pipette into an 8-tube PCR strip (130uL each tube).</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">26</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">In your ‘Lysate’ plate: Add 10uL of bead solution to each well. Use the multi-channel P20 pipette with PDF30ST pipette tips. Mix by pipetting up and down twice.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">27</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Load 28. Load lysate plate into KF robot. Press ‘Start’ button to initiate the cycle. Note any changes/notes on the extraction plate maps.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">28</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Return samples to the boxes in -80. Mark each sample with a slash on lid using a sharpie to indicate a freeze/thaw.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">29</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Disinfect hood and all items used during extraction with quatricide. Leave blower on for 15 minutes after the hood has been cleaned out.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">30</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Make note of reagents that are low or if we need to order more. Submit requests to Quartzy.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">31</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Come back in ~ 45 minutes to store extracted RNA plate in -80 freezer.</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">32</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;">Place extraction map, signed protocl, and any notes in the 'extraction map' binder in 3200 lab space</td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+<td style="text-align: left; border-left: 1px solid; border-right: 1px solid;"></td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="disinfecting-waste-disposal" class="level2">
+<h2 class="anchored" data-anchor-id="disinfecting-waste-disposal">Disinfecting &amp; Waste Disposal:</h2>
+<ol start="33" type="1">
+<li>Clean glass sash of the hood with 70% ethanol.</li>
+<li>Using sterile procedures, remove PPE, place in appropriate storage containers or biohazard waste. Wash hands with soap and water for 20 seconds. Remove sign as you exit the room.<br>
+</li>
+<li>When the extraction is complete (~41mins), cover elution plate with foil (optional: make 50 uL aliquots). Store at 4<span class="math inline">\(^\circ\)</span>C for use within 2-3 hours. Store at -80<span class="math inline">\(^\circ\)</span>C for longer term use.<br>
+</li>
+<li>Dispose of combs and lysate plates in biohazard trash.<br>
+</li>
+<li>Clean the Kingfisher buffer plates for re-use (VHB, SPM and tip-pickup). Use squirt bottle with 10% bleach to fill each well. Set aside for 15 mins. Discard liquid down the sink. Rinse with warm running tap water until wells are clear. Soak plates in quatricide overnight (mimic color of quatricide spray bottle (1:64).</li>
+</ol>
+<p><u>Following day 1:</u> 38. Discard liquid down the sink. Rinse with warm running tap water until wells are clear. Soak plates overnight in DI water.</p>
+<p><u>Following day 2:</u> 39. Dry upside down on rack above sink. 40. Place plates inside sterilization pouches and autoclave on dry cycle for 45 minutes.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
